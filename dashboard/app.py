@@ -20,7 +20,13 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent / "scraper"))
 import storage  # noqa: E402
 
-REAL_DATA_PATH = storage.EXCEL_PATH
+from pathlib import Path
+
+REAL_DATA_PATH = (
+    Path(__file__).resolve().parent.parent
+    / "data"
+    / "hmw_uhmw_database.xlsx"
+)
 SAMPLE_DATA_PATH = storage.SAMPLE_EXCEL_PATH
 
 st.set_page_config(
