@@ -8,4 +8,3 @@ rapidfuzz>=3.9
 schedule>=1.2
 python-dateutil>=2.9
 requests>=2.32
-
